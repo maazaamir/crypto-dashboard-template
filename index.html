@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Crypto Dashboard</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body>
+
+<div class="dashboard">
+
+<!-- Sidebar -->
+
+<div class="sidebar">
+
+<h2 class="logo">CryptoUI</h2>
+
+<ul>
+
+<li class="active">Dashboard</li>
+<li>Portfolio</li>
+<li>Markets</li>
+<li>Trade</li>
+<li>Wallet</li>
+<li>Settings</li>
+
+</ul>
+
+</div>
+
+
+<!-- Main -->
+
+<div class="main">
+
+<!-- Navbar -->
+
+<div class="navbar">
+
+<input type="text" placeholder="Search cryptocurrency">
+
+<div class="nav-icons">
+<span>🔔</span>
+<img src="https://i.pravatar.cc/40">
+</div>
+
+</div>
+
+
+<!-- Cards -->
+
+<div class="cards">
+
+<div class="card">
+<h4>Total Balance</h4>
+<h2>$28,540</h2>
+<span class="green">+4.2%</span>
+</div>
+
+<div class="card">
+<h4>Bitcoin</h4>
+<h2>$42,500</h2>
+<span class="green">+2.1%</span>
+</div>
+
+<div class="card">
+<h4>Ethereum</h4>
+<h2>$2,950</h2>
+<span class="green">+1.4%</span>
+</div>
+
+<div class="card">
+<h4>Profit</h4>
+<h2>$1,920</h2>
+<span class="green">+5.6%</span>
+</div>
+
+</div>
+
+
+<!-- Chart -->
+
+<div class="chart-box">
+
+<h3>Market Analytics</h3>
+
+<canvas id="chart"></canvas>
+
+</div>
+
+
+<!-- Table -->
+
+<div class="table-box">
+
+<h3>Top Cryptocurrencies</h3>
+
+<table>
+
+<thead>
+<tr>
+<th>Coin</th>
+<th>Price</th>
+<th>24h</th>
+<th>Market Cap</th>
+<th></th>
+</tr>
+</thead>
+
+<tbody>
+
+<tr>
+<td>BTC</td>
+<td>$42,500</td>
+<td class="green">+2.1%</td>
+<td>$810B</td>
+<td><button>Trade</button></td>
+</tr>
+
+<tr>
+<td>ETH</td>
+<td>$2,950</td>
+<td class="green">+1.4%</td>
+<td>$350B</td>
+<td><button>Trade</button></td>
+</tr>
+
+<tr>
+<td>SOL</td>
+<td>$110</td>
+<td class="red">-1.1%</td>
+<td>$50B</td>
+<td><button>Trade</button></td>
+</tr>
+
+</tbody>
+
+</table>
+
+</div>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
